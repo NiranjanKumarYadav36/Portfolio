@@ -12,20 +12,6 @@ export default function About() {
         <CardContent>
           <div className="space-y-4">
             <p>{personalInfo.about}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <h3 className="font-medium">Email</h3>
-                <p className="text-muted-foreground">{personalInfo.email}</p>
-              </div>
-              <div>
-                <h3 className="font-medium">Phone</h3>
-                <p className="text-muted-foreground">{personalInfo.phone}</p>
-              </div>
-              <div>
-                <h3 className="font-medium">Location</h3>
-                <p className="text-muted-foreground">{personalInfo.location}</p>
-              </div>
-            </div>
           </div>
         </CardContent>
       </Card>

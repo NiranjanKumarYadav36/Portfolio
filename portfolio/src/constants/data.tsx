@@ -32,7 +32,7 @@ export const personalInfo = {
     {
       company: "Valueye Technologies",
       period: "Mar 2025 - Present",
-      role: "Software Developer",
+      role: "Software Developer Intern",
       description: [
         "Built and deployed a full-stack blog website using React, Tailwind CSS, TypeScript, Express, and PostgreSQL",
         "Developing an AI chatbot leveraging REST APIs and modern UI libraries like shadcn/ui",
@@ -91,10 +91,12 @@ export const personalInfo = {
     {
       name: "Python Mega Course: Learn Python In 60 Days, Build 20 Apps",
       skills: ["Python", "Django", "SQLite"],
+      link: "https://www.udemy.com/certificate/UC-84cfd9a8-f378-4c5e-adc9-075f0363305b/"
     },
     {
       name: "The Ultimate MySQL Bootcamp",
       skills: ["MySQL"],
+      link: "https://www.udemy.com/certificate/UC-bdb0b278-21c6-4b0c-935b-f17bf71e5982/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com"
     },
   ];
   

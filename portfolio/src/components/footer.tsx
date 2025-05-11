@@ -1,5 +1,5 @@
 import { personalInfo } from "../constants/data";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -13,21 +13,6 @@ export default function Footer() {
           
           <div className="flex items-center gap-4">
             <a
-              href={`mailto:${personalInfo.email}`}
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
-            <a
-              href={`tel:${personalInfo.phone}`}
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Phone"
-            >
-              <Phone className="h-5 w-5" />
-            </a>
-            {/* Add your actual GitHub and LinkedIn links when available */}
-            <a
               href="https://github.com/NiranjanKumarYadav36"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,7 +22,7 @@ export default function Footer() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/niranjan-kumar-yadav-11b365284/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

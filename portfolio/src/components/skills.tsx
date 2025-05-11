@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-12">Skills & Certifications</h2>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Skills */}
         <Card>
@@ -31,11 +31,23 @@ export default function Skills() {
           </CardHeader>
           <CardContent className="space-y-4">
             {certifications.map((cert, index) => (
-              <div key={index}>
-                <h3 className="font-medium">{cert.name}</h3>
+              <div key={index} className="group">
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary hover:underline ml-2"
+                    >
+                      View Certificate
+                      {cert.name}
+                    </a>
+                  </h3>
+                </div>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {cert.skills.map((skill, i) => (
-                    <Badge key={i} variant="outline" className="text-xs">
+                    <Badge key={i} variant="secondary" className="text-xs">
                       {skill}
                     </Badge>
                   ))}
