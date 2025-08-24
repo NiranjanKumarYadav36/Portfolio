@@ -48,9 +48,9 @@ export const personalInfo = {
       teamSize: 1,
       skills: ["TypeScript", "Node.js", "Express.js", "React.js", "ShadCN", "Tailwind", "TipTapEditor"],
       description: [
-          "Developed a complete content management system with role-based access"
-          "Integrated APIs and database (PostgreSQL) for secure content management"
-          "Implemented rich text editing (Tiptap Editor) and user interaction features"
+          "Developed a complete content management system with role-based access",
+          "Integrated APIs and database (PostgreSQL) for secure content management",
+          "Implemented rich text editing (Tiptap Editor) and user interaction features",
       ],
       link: "https://blogwebsitefrontend-940n.onrender.com",
     },
