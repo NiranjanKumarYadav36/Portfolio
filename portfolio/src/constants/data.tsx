@@ -12,7 +12,7 @@ export const personalInfo = {
       institution: "Don Bosco Institute of Technology Mumbai",
       period: "2022 - 2026",
       degree: "B.E. - Information Technology",
-      score: "CGPA: 8.41 / 10",
+      score: "CGPA: 8.46 / 10",
     },
     {
       institution: "Kendriya Vidyalaya ONGC Panvel, Navi Mumbai",
@@ -34,15 +34,26 @@ export const personalInfo = {
       period: "Mar 2025 - Present",
       role: "Software Developer Intern",
       description: [
-        "Built and deployed a full-stack blog website using React, Tailwind CSS, TypeScript, Express, and PostgreSQL",
-        "Developing an AI chatbot leveraging REST APIs and modern UI libraries like shadcn/ui",
-        "Collaborated remotely with the development team to deliver production-ready features",
-        "Gained hands-on experience with scalable web app architecture and modern development workflows",
+        "Designed and developed features for a full-stack blog platform using React, Node.js, and PostgreSQL", 
+        "Built and integrated REST APIs, ensuring secure and efficient data handling", 
+        "Implemented newsletter subscription system with email notifications"
       ],
     },
   ];
   
   export const projects = [
+    {
+      title: "Full-Stack Blog Platform",
+      period: "March 2025 - May 2025",
+      teamSize: 1,
+      skills: ["TypeScript", "Node.js", "Express.js", "React.js", "ShadCN", "Tailwind", "TipTapEditor"],
+      description: [
+          "Developed a complete content management system with role-based access"
+          "Integrated APIs and database (PostgreSQL) for secure content management"
+          "Implemented rich text editing (Tiptap Editor) and user interaction features"
+      ],
+      link: "https://blogwebsitefrontend-940n.onrender.com",
+    },
     {
       title: "Wildlife Species Geolocation Prediction",
       period: "Jan 2025 - Apr 2025",
@@ -58,13 +69,12 @@ export const personalInfo = {
       title: "Wild Insights",
       period: "Aug 2024 - Oct 2024",
       teamSize: 3,
-      skills: ["Django", "ReactJS", "RestAPI", "Javascript", "SQL", "MaterialUI"],
+      skills: ["Django Rest FrameWork", "ReactJS", "RestAPI", "Javascript", "SQL", "MaterialUI"],
       description: [
-        "Developed a wildlife tracking platform to monitor habitat changes and biodiversity in India",
-        "Built a scalable REST API using Django and managed data efficiently with SQL",
-        "Implemented Google Maps integration for real-time location visualization",
-        "Optimized API responses by reducing payload size for faster performance",
-        "Secured 3rd place in INNOQUEST 2024 college competitions",
+        "Created wildlife tracking platform with Django REST API",
+        "Integrated Google Maps for real-time location visualization", 
+        "Optimized API performance through payload reduction", 
+        "Secured 3rd place in INNOQUEST 2024 college competitions"
       ],
       link: "https://github.com/NiranjanKumarYadav36/SEM_5_Project",
     },
@@ -74,10 +84,10 @@ export const personalInfo = {
       teamSize: 4,
       skills: ["Django", "Javascript", "HTML", "CSS"],
       description: [
-        "Designed a job-seeking platform for efficient job applications and employer listings",
-        "Built a robust backend using Django & MySQL with secure authentication",
-        "Created interactive frontend with HTML, CSS, and JavaScript",
-        "Implemented real-time job notifications using WebSockets",
+        "Built a job-seeking platform with Django & SQLite backend", 
+        "Implemented secure authentication, role-based access, and job postings", 
+        "Designed interactive frontend with HTML, CSS, and JavaScript", 
+        "Ensured efficient data handling through REST APIs"
       ],
       link: "https://github.com/NiranjanKumarYadav36/Python_Mini_-Project-",
     },
