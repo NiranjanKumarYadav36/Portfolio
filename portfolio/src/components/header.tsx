@@ -1,7 +1,7 @@
 import { personalInfo } from "../constants/data";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { Menu, Moon, Sun } from "lucide-react";
+import { Menu, Moon, Sun, Download } from "lucide-react";
 import { useTheme } from "./theme-provider";
 import { DropdownMenu, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { useEffect, useState } from "react";
@@ -18,6 +18,16 @@ export default function Header() {
         { name: "Skills", href: "#skills" },
         { name: "Contact", href: "#contact" },
     ];
+
+    const handleDownload = () => {
+        // Using a method that works in most environments
+        const link = document.createElement('a');
+        link.href = '/resume.pdf';
+        link.download = `${personalInfo.name.replace(/\s+/g, '-').toLowerCase()}-resume.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -66,6 +76,17 @@ export default function Header() {
                         ))}
                     </nav>
 
+                    {/* Resume Download Button - Desktop */}
+                    <Button 
+                        onClick={handleDownload}
+                        variant="outline" 
+                        size="sm"
+                        className="hidden md:flex gap-1"
+                    >
+                        <Download className="h-4 w-4" />
+                        Resume
+                    </Button>
+
                     {/* Dark Mode Toggle */}
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
@@ -79,7 +100,6 @@ export default function Header() {
                                 <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                                 <span className="sr-only">Toggle theme</span>
                             </Button>
-
                         </DropdownMenuTrigger>
                     </DropdownMenu>
 
@@ -105,7 +125,19 @@ export default function Header() {
                                         {item.name}
                                     </a>
                                 ))}
+                                
+                                {/* Resume Download Button - Mobile */}
+                                <Button 
+                                    onClick={handleDownload}
+                                    variant="outline" 
+                                    size="sm"
+                                    className="mx-4 gap-1"
+                                >
+                                    <Download className="h-4 w-4" />
+                                    Download Resume
+                                </Button>
                             </div>
+                            
                             {/* Dark Mode Toggle for Mobile */}
                             <div className="mb-8">
                                 <DropdownMenu>
@@ -118,6 +150,7 @@ export default function Header() {
                                         >
                                             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 mr-2" />
                                             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 mr-2" />
+                                            Toggle Theme
                                         </Button>
                                     </DropdownMenuTrigger>
                                 </DropdownMenu>
