@@ -22,7 +22,7 @@ export default function Header() {
     const handleDownload = () => {
         // Using a method that works in most environments
         const link = document.createElement('a');
-        link.href = '/resume.pdf';
+        link.href = '/Niranjan_Kumar_Yadav_Resume.pdf';
         link.download = `${personalInfo.name.replace(/\s+/g, '-').toLowerCase()}-resume.pdf`;
         document.body.appendChild(link);
         link.click();
