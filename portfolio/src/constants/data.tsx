@@ -34,9 +34,10 @@ export const personalInfo = {
       period: "Mar 2025 - Present",
       role: "Software Developer Intern",
       description: [
-        "Designed and developed features for a full-stack blog platform using React, Node.js, and PostgreSQL", 
-        "Built and integrated REST APIs, ensuring secure and efficient data handling", 
-        "Implemented newsletter subscription system with email notifications"
+        "Designed and implemented scalable role-based access control (RBAC) systems for two distinct applications:",
+        "A CMS with Admin/User roles for content management and publishing.", 
+        "A society management portal with granular permissions for Resident, Secretary, and Treasurer roles to control access to financial and administrative features.",
+        "Integrated Tiptap Editor to provide users with advanced rich-text editing functionality",
       ],
     },
   ];
@@ -48,22 +49,11 @@ export const personalInfo = {
       teamSize: 1,
       skills: ["TypeScript", "Node.js", "Express.js", "React.js", "ShadCN", "Tailwind", "TipTapEditor"],
       description: [
-          "Developed a complete content management system with role-based access",
-          "Integrated APIs and database (PostgreSQL) for secure content management",
-          "Implemented rich text editing (Tiptap Editor) and user interaction features",
+          "Developed a responsive full-stack blog application utilizing a React frontend, a Node.js backend, and a PostgreSQL database.",
+          "Engineered a secure RESTful API for all CRUD operations and implemented JWT-based authentication for user security.",
+          "Integrated a newsletter subscription feature with automated email notifications, increasing user engagement.",
       ],
       link: "https://blogwebsitefrontend-940n.onrender.com",
-    },
-    {
-      title: "Wildlife Species Geolocation Prediction",
-      period: "Jan 2025 - Apr 2025",
-      teamSize: 4,
-      skills: ["Machine Learning", "Pandas", "Data Processing"],
-      description: [
-        "Built a classification model to predict amphibian species based on environmental features",
-        "Applied Random Forest algorithm with SMOTE to address class imbalance",
-        "Used 5-Fold Cross-Validation to validate model performance",
-      ],
     },
     {
       title: "Wild Insights",
@@ -71,10 +61,9 @@ export const personalInfo = {
       teamSize: 3,
       skills: ["Django Rest FrameWork", "ReactJS", "RestAPI", "Javascript", "SQL", "MaterialUI"],
       description: [
-        "Created wildlife tracking platform with Django REST API",
-        "Integrated Google Maps for real-time location visualization", 
-        "Optimized API performance through payload reduction", 
-        "Secured 3rd place in INNOQUEST 2024 college competitions"
+            "Built a Django REST API backend integrated with the Google Maps API to enable real-time wildlife sighting tracking and data visualization.", 
+            "Optimized API performance by reducing response payload size by approximately 30%, significantly improving frontend load times.", 
+            "Secured 3rd place in a competitive tech event, demonstrating strong problem-solving and development skills.",
       ],
       link: "https://github.com/NiranjanKumarYadav36/SEM_5_Project",
     },
